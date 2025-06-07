@@ -9,21 +9,21 @@ let currentCount = 0
 count.textContent = currentCount
 
 // Fungsi untuk memperbarui angka dan warna teks
-function numCount(){
-    currentCount < 0 ? count.style.color = 'red' : count.style.color = 'green'
-    count.textContent = currentCount
+function numCount() {
+  currentCount < 0 ? (count.style.color = 'red') : (count.style.color = 'green')
+  count.textContent = currentCount
 }
 
 // Menambah 1 jika di klik
-addCount.addEventListener('click', ()=>{
-    currentCount += 1
-    numCount()
+addCount.addEventListener('click', () => {
+  currentCount += 1
+  numCount()
 })
 
 // Mengurangi 1 jika di klik
-lowerCount.addEventListener('click', ()=>{
-    currentCount -= 1
-    numCount()
+lowerCount.addEventListener('click', () => {
+  currentCount -= 1
+  numCount()
 })
 
 // Sampai disini selesai

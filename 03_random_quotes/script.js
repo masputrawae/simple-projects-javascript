@@ -1,29 +1,31 @@
 // Buat Array & Object untuk menampung Quote
 const quotes = [
-    {
-        quote: 'In Lorem proident voluptate laboris proident quis quis.',
-        author: '- Anonymous',
-    },
-    {
-        quote: 'Tempor voluptate voluptate laboris nulla.',
-        author: '- John Miller',
-    },
-    {
-        quote: 'Voluptate irure ullamco dolor magna officia sunt magna dolore irure tempor.',
-        author: '- Sarah Jones',
-    },
-    {
-        quote: 'Veniam ad sit velit nulla minim ad dolor esse do officia reprehenderit sit.',
-        author: '- Michael Brown',
-    },
-    {
-        quote: 'Exercitation ea irure sunt laboris ea do duis deserunt.',
-        author: '- Emily Garcia,',
-    },
-    {
-        quote: 'Aliquip aliqua laboris et minim anim laborum dolor culpa.',
-        author: '- David Rodriguez',
-    },
+  {
+    quote: 'In Lorem proident voluptate laboris proident quis quis.',
+    author: '- Anonymous',
+  },
+  {
+    quote: 'Tempor voluptate voluptate laboris nulla.',
+    author: '- John Miller',
+  },
+  {
+    quote:
+      'Voluptate irure ullamco dolor magna officia sunt magna dolore irure tempor.',
+    author: '- Sarah Jones',
+  },
+  {
+    quote:
+      'Veniam ad sit velit nulla minim ad dolor esse do officia reprehenderit sit.',
+    author: '- Michael Brown',
+  },
+  {
+    quote: 'Exercitation ea irure sunt laboris ea do duis deserunt.',
+    author: '- Emily Garcia,',
+  },
+  {
+    quote: 'Aliquip aliqua laboris et minim anim laborum dolor culpa.',
+    author: '- David Rodriguez',
+  },
 ]
 
 // Ambil elemen DOM berdasarkan ID
@@ -33,14 +35,14 @@ const author = document.getElementById('author')
 
 // Fungsi Untuk Shuffle atau mengacak array
 function shuffle() {
-    return quotes[Math.floor(Math.random() * quotes.length)]
+  return quotes[Math.floor(Math.random() * quotes.length)]
 }
 
 function setQuote() {
-    // Masukkan Hasil Shuffle ke variabel baru
-    const random = shuffle()
-    quote.textContent = random.quote
-    author.textContent = random.author
+  // Masukkan Hasil Shuffle ke variabel baru
+  const random = shuffle()
+  quote.textContent = random.quote
+  author.textContent = random.author
 }
 
 // Jalankan Pertama kali agar tidak kosong di awal

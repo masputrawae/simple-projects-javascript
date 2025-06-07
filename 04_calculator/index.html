@@ -1,30 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <div class="form">
-        <strong>Hasil: <span id="result"></span></strong>
-        <br>
-        <input type="number" name="val1" id="val1" placeholder="Masukkan angka pertama">
-        <input type="number" name="val2" id="val2" placeholder="Masukkan angka kedua">
-        <br>
-        <select name="operation" id="operation">
-            <option value="+">+ Tambah</option>
-            <option value="-">- Kurang</option>
-            <option value="*">* Kali</option>
-            <option value="**">** Exponent</option>
-            <option value="/">/ Bagi</option>
-            <option value="%">% Sisa Bagi</option>
-        </select>
+      <strong>Hasil: <span id="result"></span></strong>
+      <br />
+      <input
+        type="number"
+        name="val1"
+        id="val1"
+        placeholder="Masukkan angka pertama"
+      />
+      <input
+        type="number"
+        name="val2"
+        id="val2"
+        placeholder="Masukkan angka kedua"
+      />
+      <br />
+      <select name="operation" id="operation">
+        <option value="+">+ Tambah</option>
+        <option value="-">- Kurang</option>
+        <option value="*">* Kali</option>
+        <option value="**">** Exponent</option>
+        <option value="/">/ Bagi</option>
+        <option value="%">% Sisa Bagi</option>
+      </select>
 
-        <button id="show">Hasil</button>
+      <button id="show">Hasil</button>
     </div>
 
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>

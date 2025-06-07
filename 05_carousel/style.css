@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1a1a1a;
+}
+
+.carousel {
+  width: 600px;
+  max-width: 100%;
+  overflow: hidden;
+  aspect-ratio: 3/2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  border-radius: 0.5rem;
+}
+
+.carousel__control {
+  position: absolute;
+}
