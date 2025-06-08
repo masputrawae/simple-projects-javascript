@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- START: FORM -->
+      <form class="form" id="form">
+        <h1 class="site-title">Todo App</h1>
+        <!-- START: DATE INPUT -->
+        <div class="form__group">
+          <label for="inputDate" class="form__label">Tanggal</label>
+          <input
+            type="datetime-local"
+            name="inputDate"
+            id="inputDate"
+            class="form__input"
+            required
+          />
+        </div>
+        <!-- END: DATE INPUT -->
+
+        <!-- START: TASK INPUT -->
+        <div class="form__group">
+          <label for="inputTask" class="form__label">Tugas</label>
+          <textarea
+            class="form__input"
+            name="inputTask"
+            id="inputTask"
+            cols="30"
+            rows="20"
+            required
+          ></textarea>
+        </div>
+        <!-- END: TASK INPUT -->
+
+        <button type="submit" class="form__submit">Simpan</button>
+      </form>
+      <!-- END: FORM -->
+
+      <ul class="results" id="results">
+      </ul>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
