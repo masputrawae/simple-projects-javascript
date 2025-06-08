@@ -36,7 +36,7 @@ h1 {
 
 blockquote {
   width: 280px;
-  height: 50px;
+  height: 70px;
   
   position: relative;
   border-left: 4px solid #4064ff;
@@ -45,8 +45,8 @@ blockquote {
 
 cite {
   position: absolute;
-  bottom: 1rem;
-  right: 1rem;
+  bottom: 0.5rem;
+  right: 0.5rem;
 }
 
 button {
