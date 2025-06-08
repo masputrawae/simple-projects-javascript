@@ -1,4 +1,4 @@
-// Buat array berisi warna
+// Buat Array Yang Berisi Warna
 const colors = [
   '#f43f5e',
   '#ec4899',
@@ -13,33 +13,37 @@ const colors = [
   '#ef4444',
 ]
 
-// Ambil elemen tombol dan elemen body dari HTML
-const btn = document.getElementById('shuffleButton')
+// Ambil elemen tombol dan elemen body dari HTML 
+const btn = document.getElementById('change')
 
 // ! bisa pakai "document.body" jika tidak mau pakai id="body" !
+// contoh: const body = document.body
 const body = document.getElementById('body')
 
 // fungsi untuk mengacak warna
-function random() {
+function shuffleColor() {
   // Gunakan Math.random() untuk menghasilkan angka acak (0 - 1)
   // Kalikan dengan panjang array agar mencakup semua indeks
   // Gunakan Math.floor() untuk membulatkan ke bawah ke indeks terdekat
   return colors[Math.floor(Math.random() * colors.length)]
 }
 
-// Ubah latar belakang saat tombol diklik
-btn.addEventListener('click', () => {
-  // Kemudian ubah background dengan .style.backgroundColor
-  // Fungsi random() akan dijalankan dan mengembalikan hasil
-  // untuk mengisi background
-  body.style.backgroundColor = random()
-})
+// Fungsi untuk mengubah background element
+// (element) sebagai parameter 
+function changeBg(element){
+  element.style.backgroundColor = shuffleColor()
+}
 
-// Sampai disini selesai
-// Hal yang telah kupelajari dari latihan ini:
-// - Cara membuat array di JavaScript
-// - Cara mengambil elemen HTML dengan getElementById
-// - Cara membuat fungsi sendiri
-// - Cara menggunakan objek bawaan Math (terutama Math.random() dan Math.floor())
-// - Cara menambahkan event listener (klik tombol)
-// - Cara mengubah style elemen HTML dengan JavaScript
+// Menetapkan Background untuk pertama kali, agar tidak kosong (opsional)
+changeBg(body)
+
+// Ubah latar belakang saat tombol diklik
+// Panggil fungsi untuk mengubah Background element saat tombol di klik
+btn.addEventListener('click', changeBg(body))
+  
+// Hal yang telah ku pelajari:
+// - Cara membuat array warna
+// - Cara memilih elemen DOM dengan getElementById
+// - Cara membuat fungsi acak dengan Math.random dan Math.floor
+// - Cara mengubah style elemen melalui JavaScript
+// - Cara menambahkan event listener pada tombol

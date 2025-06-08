@@ -15,7 +15,7 @@ body {
 }
 
 .box {
-  padding: 2rem;
+  padding: 1rem;
   
   display: flex;
   justify-content: center;
@@ -23,7 +23,6 @@ body {
   flex-direction: column;
   gap: 16px;
   
-  background: #00000083;
   border: 3px solid #00000083;
   border-radius: 0.75rem;
   
@@ -32,7 +31,22 @@ body {
 
 h1 {
   font-size: 2rem;
-  color: #ffffff;
+  color: #000000;
+}
+
+blockquote {
+  width: 280px;
+  height: 50px;
+  
+  position: relative;
+  border-left: 4px solid #4064ff;
+  padding-left: 1.5rem;
+}
+
+cite {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
 }
 
 button {

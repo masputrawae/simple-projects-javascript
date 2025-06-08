@@ -29,7 +29,7 @@ const quotes = [
 ]
 
 // Ambil elemen DOM berdasarkan ID
-const generate = document.getElementById('generate')
+const shuffleBtn = document.getElementById('shuffleBtn')
 const quote = document.getElementById('quote')
 const author = document.getElementById('author')
 
@@ -49,7 +49,7 @@ function setQuote() {
 setQuote()
 
 // Panggil fungsi setQuote() ketika klik
-generate.addEventListener('click', setQuote)
+shuffleBtn.addEventListener('click', setQuote)
 
 // Hal yang telah kupelajari dari latihan ini:
 // - Cara menyimpan data dalam bentuk array of objects
